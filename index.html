@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O clima, com ESP 8266</title>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval';
+         style-src 'self' 'unsafe-inline';
+         media-src *;
+         img-src 'self' data: content:;
+        ">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <!--<iframe title="test" src="http://testess.atwebpages.com/api.php?n=1"></iframe>-->
+        <div class="container">
+            <h3 class="title">Temperatura & umidade</h3>
+            <div class="know">
+                <span id="current_temp">--</span> / <span id="current_hum">--</span>
+            </div>
+            <div id="graphic_box" class="graph">
+                <!-- Aqui vai o gráfico feito em SVG-->
+            </div>
+            <!-- Seleção de filtragem -->
+            <div class="bottom-selection filter-by-number">
+                <div class="filter-by-number">
+                    <input id="number_of_entries" type="number" value="10"><br>
+                    <label for="number_of_entries">Número de entradas</label>
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+        <script> 
+            
+        </script>
+    </body>
+</html>
